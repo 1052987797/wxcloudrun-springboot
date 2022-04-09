@@ -45,7 +45,7 @@ public class CounterController {
       count = counter.get().getCount();
     }
 
-    return ApiResponse.ok(count);
+    return ApiResponse.ok(count+100);
   }
 
 
@@ -79,5 +79,5 @@ public class CounterController {
       return ApiResponse.error("参数action错误");
     }
   }
-  
+
 }
